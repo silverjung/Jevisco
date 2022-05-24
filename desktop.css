@@ -1,0 +1,618 @@
+header{
+    width: 100%;
+    height: 8.3rem;
+    clear: both;
+    position: fixed;  top: 0;
+    z-index: 10;
+    background: #fff;
+    box-shadow:0 0.4rem 0.4rem 0 rgba(0,0,0,0.15) ;
+}
+header>.header{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    width: 96rem; height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+header h1{
+    flex: 0 1 auto;
+    width: 19rem;
+    background: url(http://www.jevisco.com/front/kr/asset/images/common/h1_logo_1.gif) no-repeat 0 50%;
+}
+header>a{
+
+}
+/* 네비게이션 */
+header nav{
+    display: flex;
+    flex: 0 1 auto;
+    text-align: center;
+}
+/* depth 1 */
+header nav>ul{
+    display: flex;
+    align-items: center;
+    width: 55rem;
+}
+header nav>ul>li{
+    flex: 1 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header nav>ul>li>a{
+    font-size: 1.6rem; line-height: 2.4rem;
+    font-weight: bold;
+    padding-bottom: 0.8rem;
+    color: #222;
+}
+header nav>ul>li>a:hover{
+    border-bottom: 0.3rem solid #07399c;
+}
+header nav>ul>li:hover>ul{
+    display: block;
+}
+/* depth2 */
+header nav>ul>li>ul{
+    display: none;
+    position: absolute;
+    top: 5.5rem ;
+    z-index: 10;
+    width: 18.5rem;
+}
+header nav>ul>li>ul>li{
+    background: #07399c;
+    position: relative;
+    border: 0.1rem solid #07399c;
+}
+header nav>ul>li>ul>.dep3>a{
+    background: #07399c;
+    background: url(http://www.jevisco.com/front/kr/asset/images/common/bu_2depth.png) no-repeat 90% 50%;
+}
+header nav>ul>li>ul>li>a{
+    display: block;
+    padding-left: 2rem;
+    height: 4.4rem;
+    font-size: 1.4rem; font-weight: 100;
+    line-height: 4.3rem;
+    color: #ffffff ;
+    text-align: justify;
+    border: 0.1rem #07399c;
+    background: #07399c;
+}
+header nav>ul>li>ul>li:nth-of-type(1)>a:hover{
+    background: #00a6ff;
+    color: #fff;
+}
+header nav>ul>li>ul>li:hover>a{
+    background: #fff;
+    color: #263238;
+}
+header nav>ul>li>ul>li.dep3>a:hover{
+    color: #263238;
+    background: #fff url(../img/bu_2depth_on.png) no-repeat 90% 50%;
+    border-right: none;
+}
+header nav>ul>li>ul>li:hover>ul{
+    display: block;
+}
+/* depth3 */
+header nav>ul>li>ul>li>ul{
+    display: none;
+    position: absolute;
+    top: -0.1rem; 
+    width: 18.8rem;
+    margin-left: 100%;
+    border: 0.1rem solid #07399c;
+    padding: 0.5rem 0;
+    background: #fff;
+    border-left-width: 0;
+}
+header nav>ul>li>ul>li.dep3>ul>li>a{
+    display: block;
+    font-size: 1.4rem; font-weight: 100;
+    line-height: 3.4rem;
+    background: #fff url(http://www.jevisco.com/front/kr/asset/images/common/bg_3depth_line.gif) no-repeat 5% 50%;
+    color: #263238;
+    text-align: justify;
+    padding-left: 2rem;
+}
+header nav>ul>li>ul>li.dep3>ul>li>a:hover{
+    text-decoration: underline;
+    color: #07399c;
+}
+header nav>ul>li>ul>li.dep3>ul>li:hover{
+    background: #fff;
+}
+header .right_menu{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 14rem;
+}
+header .right_menu>a{
+    overflow: hidden;
+    display: block;
+    height: 3.5rem;
+    font-size: 1.1rem; font-weight: bold;
+    color: #eceff1;
+    line-height: 3.5rem;
+    padding: 0 3.6rem 0 1rem;
+    background: #424c51 url(http://www.jevisco.com/front/kr/asset/images/common/ic_search.png) no-repeat 90% 50%;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #424c51;
+}
+header .right_menu>.search{
+    position: absolute;
+    top: 8.3rem; right: 0;
+    width: 32rem; height: 5rem;
+}
+header .right_menu>.search input[type="search"]{
+    float: left;
+    width: 100%; height: 5rem;
+    background: #424c51 url(http://www.jevisco.com/front/kr/asset/images/common/bg_head_search.png) no-repeat 10% 50%;
+    border: none;
+}
+header .right_menu>.search .h_button{
+    position: absolute;
+    top: 1.4rem; right: 1.3rem;
+    width: 6.1rem;
+    background: url(http://www.jevisco.com/front/kr/asset/images/common/sch_close_line.png) no-repeat 50% 50%;
+    box-sizing: border-box;
+}
+header .right_menu>.search .h_button>input[type="image"]{
+
+}
+header .right_menu>.search .h_button>input[type="image"]:nth-of-type(1){
+    float: left;
+    width: 2rem; height: 2rem;
+}
+header .right_menu>.search .h_button>input[type="image"]:nth-of-type(2){
+    float: right;
+    width: 1.4rem; height: 1.4rem;
+    padding-top: 0.5rem;
+}
+header .kor{
+    position: absolute;
+    top: 2.2rem; right: 0;
+    width: 4.6rem;
+}
+header .kor>a{
+    display: inline-block;
+    width: 4.6rem; height: 3.6rem;
+    border: 0.1rem solid #a9b0b8;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    line-height: 1.8rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #222;
+    background: url(http://www.jevisco.com/front/kr/asset/images/common/country_off.png) no-repeat 50% 2.5rem;
+}
+header .kor>ul{
+    height: 6.4rem;
+    position: absolute;
+    left: 0; top: 3.3rem;
+}
+header .kor>ul>li{
+    width: 4.6rem;
+    border: 0.1rem solid #a9b0b8;
+    box-sizing: border-box;
+    background: #fff;
+}
+header .kor>ul>li>a{
+    display: block;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #444;
+}
+header .kor>ul>li>a:hover{
+    background: #424c51 ;
+    color: #fff;
+}
+/* top 버튼 */
+
+/* 메인 */
+main{
+    width: 100%;
+}
+main>.main_movie{ 
+    background: #dbdbdb;
+    margin-top: 8.3rem;
+    border: none;
+}
+main .movie{
+    width: 100%; height: 40vw;
+}
+main>.main_c{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+main>.main_c>.middle_ad>ul{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+main>.main_c>.middle_ad>ul>li{
+    width: 25vw ; 
+    flex: 0 1 auto;
+    overflow: hidden;
+}
+main>.main_c>.middle_ad>ul>li>a{
+    position: relative;
+    width: 100%; height: 23.6vw;
+    display: block;
+}
+main>.main_c>.middle_ad>ul>li>a>img{
+    position: absolute;
+    bottom: 0;
+    width:100% ; 
+}
+main>.main_c>.middle_ad>ul>li>a>img:nth-of-type(2){
+    position: absolute;
+    opacity: 0;
+    transition: all .5s ease;
+}
+main>.main_c>.middle_ad>ul>li>a>img:nth-of-type(3){
+    width: 78%;
+    position: absolute;
+    right: -3rem; bottom: 0;
+    transition: all .5s ease;
+}
+main>.main_c>.middle_ad>ul>li:hover>a>img:nth-of-type(2){
+    opacity: 1;
+}
+main>.main_c>.middle_ad>ul>li:hover>a>img:nth-of-type(3){
+    right: 0;
+}
+/* 뉴스 */
+main .news{
+    width: 100%;
+    margin-top: 5rem; 
+    overflow: hidden;
+}
+main .news>.left_news{
+    height: 37.4rem;
+    padding: 0 1.5rem;
+}
+main .news h1{
+    font-size: 2.4rem; font-weight: bold;
+    color: #004ba9;
+    border-top: 0.2rem solid #004ba9;
+    padding: 2rem ;
+}
+main .news>.left_news>h1{
+    border-bottom: 0.1rem solid #e1e1e1;
+}
+main .news .left_news>article{
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    padding:0 1rem;
+    margin-top: 2.5rem;
+}
+main .news .left_news>article>.orange_box{
+
+    height: 2.1rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    border: 0.1rem solid #e37e5e;
+    padding: 0 0.6rem;
+    color: #e37e5e;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.2rem;
+}
+main .news>.left_news article>strong{
+    clear: both;
+
+    display: block;
+    margin: 1.5rem 0 1rem 0;
+}
+main .news>.left_news article>strong>a{
+    font-size: 1.8rem; font-weight: 600;
+    line-height: 2.6rem;
+    color: #222222;
+}
+main .news>.left_news article>time{
+    clear: both;
+    font-size: 1.3rem;
+    color: #666666;
+    line-height: 1.6rem;
+}
+main .news>.left_news article>p{
+    width: 100%;
+    line-height: 2.2rem;
+    margin: 2.5rem 0;
+    font-size: 1.4rem;
+}
+main .news>.left_news .news_box{
+    float: left;
+    overflow: hidden;
+    width: 50%; height: 28rem;
+    margin-top: 2.5rem;
+}
+main .news>.left_news .news_list{
+    overflow: hidden;
+    width: 100%; height: 24.3rem;
+}
+main .news>.left_news .news_list>ul{
+    float: left;
+    width: 100%;
+}
+main .news>.left_news .news_list>ul>li{
+    position: relative;
+    border-top: 0.1rem solid #e1e1e1;
+    box-sizing: border-box;
+    width: 100%;
+    padding:0 2rem 0 7rem;
+    height: 6rem;
+}
+main .news>.left_news article{
+    padding-top: 2rem;
+}
+main .news>.left_news ul .orange_box{
+    position: absolute;
+    top: calc( 50% - 1.05rem); left: 0;
+    height: 2.1rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    border: 0.1rem solid #e37e5e;
+    padding: 0 0.6rem;
+    color: #e37e5e;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.2rem;
+}
+main .news>.left_news ul>li .text{
+    float: left;
+    width: 80%;
+    padding: 2rem 0;
+}
+main .news>.left_news ul>li .text>a{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap; text-overflow: ellipsis;
+    font-size: 1.4rem; font-weight: bold;
+    color: #222;
+}
+main .news>.left_news ul>li time{
+    float: right;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    letter-spacing: -0.1rem;
+    font-size: 1.4rem;
+    color: #666;
+}
+main .news>.left_news .controls{
+    display: flex;
+    justify-content: space-between;
+    width:95%; height:3.2rem;
+    padding-top: 0.8rem;
+    margin-top: 1rem;
+}
+main .news>.left_news .controls>.prev{
+    width: 1.2rem; height: 2.1rem;
+    background: url(http://www.jevisco.com/front/kr/asset/images/main/btn_main_news_left.png) no-repeat 0 0;
+}
+main .news>.left_news .controls .play{
+
+
+}
+main .news>.left_news .controls>.play>ul{
+    display: flex; justify-content: space-between;
+}
+main .news>.left_news .controls>.play>ul>li{
+   width: 2.2rem; height: 2.4rem; 
+}
+main .news>.left_news .controls>.play>ul>li>a{
+    display: block; height:2.41rem;
+     background: url(http://www.jevisco.com/front/kr/asset/images/main/mainnews_indicator.png) no-repeat 50% 50%;
+}
+main .news>.left_news .controls .play>ul>li.on>a{
+    background: url(http://www.jevisco.com/front/kr/asset/images/main/mainnews_indicator_on.png) no-repeat 50% 50%;
+}
+main .news>.left_news .controls>.next{
+    width: 1.2rem; height: 2.1rem;
+    background: url(http://www.jevisco.com/front/kr/asset/images/main/btn_main_news_right.png) no-repeat 0 0;
+}
+
+/*                     뉴스 오른쪽                        */
+main .news .right_news{
+    margin-top: 3rem;
+    clear: both;
+    padding: 1.5rem;
+}
+main .news>.right_news>.first{
+    overflow: hidden;
+
+}
+main .news>.right_news>.first>.com{
+    width: 50% ;
+    float: left;
+    box-sizing: border-box;
+
+}
+main .news>.right_news a{
+    display: block;
+    width: 100%; height: 100%;
+    background: url(http://www.jevisco.com/front/kr/asset/images/main/img_menu_more02.png) no-repeat 95% 1.8rem;
+}
+main .news>.right_news a>p{
+    color: #004ba9;
+    padding: 0 2rem 2.5rem 2rem;
+    font-size: 1.4rem; line-height: 2.3rem;
+}
+main .news>.right_news a>img{
+     width: 100%;
+}
+main .news>.right_news>.first>.brand{
+    float: left;
+    width: 50%;
+    padding-left: 2rem;
+    box-sizing: border-box;
+}
+main .news>.right_news>.second{
+    overflow: hidden;
+    margin-top: 5rem;
+    margin-left: -2rem;
+}
+main .news>.right_news>.second>.enter{
+    width: 50%;
+    float: left;
+    padding-left: 2rem;
+    box-sizing: border-box;
+}
+main .news>.right_news>.second>.history{
+    width: 50%;
+    float: left;
+    padding-left: 2rem;
+    box-sizing: border-box;
+}
+/* 하단 메뉴 */
+main .devide{
+    margin-top:8rem ;
+}
+main .devide>ul{
+    width: auto;
+    overflow: hidden;
+
+}
+main .devide>ul>li{
+    float: left;
+    box-sizing: border-box;
+    padding-left: 2rem;
+    width: 33.3%;
+    height: 7rem;
+}
+main .devide>ul>li>a{
+    display: block;
+    vertical-align: middle;
+    padding: 2rem 4rem 0 7rem;
+    width: 100%; height: 7rem;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+    border: 0.1rem solid #cccccc;
+    background: url(http://www.jevisco.com/front/kr/asset/images/main/img_menu_more.png) no-repeat 95% 50%;
+    color: #004ba9;
+    line-height: 2.4rem;
+    letter-spacing: -0.1rem;
+}
+main .devide>ul>li:nth-of-type(1){
+    background: url(http://www.jevisco.com/front/kr/asset/images/main/bg_main_btn01.png) no-repeat 11% 50%;
+}
+main .devide>ul>li:nth-of-type(2){
+    background: url(http://www.jevisco.com/front/kr/asset/images/main/bg_main_btn02.png) no-repeat 11% 50%;
+}
+main .devide>ul>li:nth-of-type(3){
+    background: url(http://www.jevisco.com/front/kr/asset/images/main/bg_main_btn03.png) no-repeat 11% 50%;
+}
+main .top{
+    position: fixed;
+    bottom: 5rem; left: 50%;
+    width: 5rem; height: 5rem;
+    background: url(http://www.jevisco.com/front/kr/asset/images/common/btn_top.png) no-repeat 0 0;
+    margin-left: 55rem;
+}
+/*                        하단 */
+footer{
+    clear: both;
+    margin-top: 10rem;
+    background: #263238;
+}
+footer>.black{
+    margin:0 auto;
+    width: 96rem;
+    height: 5.5rem; 
+}
+footer>.black>.personal{
+    float:left;
+    padding-top: 1.8rem;
+}
+footer>.black>.personal>li{
+    float: left;
+    padding-left: 1.9rem;
+    background: url(http://www.jevisco.com/front/kr/asset/images/common/bg_foot_util.png) no-repeat 0.9rem 0.3rem;
+}
+footer>.black>.personal>li:nth-of-type(1){
+    background: none;
+    padding-left: 0;
+}
+footer>.black>.personal>li>a{
+    float: left;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: #a1a1a1;
+}
+footer>.black>.family{
+    float:right;
+    width: 24rem; height:5.5rem;
+    position: relative;
+    bottom: 0; right:0 ;
+    background: #1e292e;
+    z-index: 150;
+}
+footer>.black>.family>div.family_box{
+    position:absolute;
+    left:0; bottom:0;
+    width:24rem; 
+    background: #1e292e;
+}
+footer>.black>.family>div.family_box>p{
+    font-size: 1.4rem; font-weight: bold;
+    background: url(http://www.jevisco.com/front/kr/asset/images/common/family_off.png) no-repeat 90% 50%;
+    color: #a1a1a1 ;
+    padding-left: 3rem;
+    height: 5.5rem;
+    box-sizing: border-box;
+    line-height: 5.5rem;
+}
+footer>.black>.family>div.family_box>ul{
+    padding: 1.4rem 0;
+}
+footer>.black>.family>div.family_box>ul>li>a{
+    display: block;
+    font-size: 1.3rem ;
+    line-height: 2.7rem ;
+    color: #a1a1a1;
+    padding-left: 2.9rem;
+}
+footer>.black>.family>div.family_box>ul>li>a:hover{
+    color: #fff;
+    font-weight: bold;
+}
+footer .gangnam{
+    overflow: hidden;
+    padding: 2rem 0 2.8rem 0;
+    background:#e9eaeb;
+}
+footer .gangnam>.center{
+    margin:0 auto;
+    width:96rem;
+}
+footer .gangnam>.center>p{
+    float: left;
+}
+footer .gangnam>.center>p>img{
+    width: 18.9rem; height: 3.1rem;
+    margin: 0.5rem 2rem 0 0;
+}
+footer .gangnam>.center>address{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #37474f;
+}
+footer .gangnam>.center>.copy{
+    clear: both;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
