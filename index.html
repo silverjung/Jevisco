@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
     <script>
         $(function() {
             $(".product_s").click(function(e) {
@@ -29,9 +30,11 @@
                 autoplay: true,
                 autoplaySpeed: 3000,
             });
-            
+            $(".family_box").click(function(e) {
+                e.preventDefault();
+                $(".family_menu").slideToggle();
+            });
         });
-
     </script>
 </head>
 
@@ -41,10 +44,10 @@
             <h1>
                 <a href="#">제비스코</a>
             </h1>
-            <div class="mobile_gnb">
+            <div class="mobile_gnb" id="mGnb">
                 <a href="#"></a>
             </div>
-            <nav>
+            <nav id="navMenu">
                 <h1 class="hidden">건축용</h1>
                 <div class="m_head">
                     <h2 class="m_logo"></h2>
@@ -250,7 +253,7 @@
                         </ul>
                     </li>
                 </ul>
-                <a href="#" class="close"><span class="hidden">닫기</span></a>
+                <a href="#" class="close" id="closeBtn"><span class="hidden">닫기</span></a>
             </nav>
             <div class="dark"></div>
             <div class="right_menu">
@@ -487,7 +490,7 @@
             <div class="family">
                 <div class="family_box">
                     <p>Family site</p>
-                    <ul>
+                    <ul class="family_menu">
                         <li>
                             <a href="#">강남화성</a>
                             <a href="#">㈜강남</a>
@@ -513,5 +516,15 @@
         </div>
     </footer>
 </body>
-
+<script>
+    const menu = document.getElementById("mGnb");
+    const box = document.getElementById("navMenu");
+    const Close = document.getElementById("closeBtn");
+    menu.addEventListener("click", () => {
+        box.style.display = "block";
+    });
+    Close.addEventListener("click", () => {
+        box.style.display = "none";
+    });
+</script>
 </html>
