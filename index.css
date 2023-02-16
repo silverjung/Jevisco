@@ -720,6 +720,7 @@ footer > .black > .family > div.family_box > p {
 
 footer > .black > .family > div.family_box > ul {
     padding: 1.4rem 0;
+    display: none;
 }
 
 footer > .black > .family > div.family_box > ul > li > a {
